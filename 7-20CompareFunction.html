@@ -26,12 +26,12 @@
               return -1;
             if ( str1[i] < str2[i] )
               return 1;
-            }
-            // in case 1 word is longer and all previous letters match. Whichever word is longer will be greater, returning 1. 
-            if( length == str1Length )
-                  return -1;
-                else
-                  return 1; 
+          }
+          // in case 1 word is longer and all previous letters match. Whichever word is longer will be greater, returning 1. 
+          if( length == str1Length )
+            return -1;
+          else
+            return 1; 
         }
         console.log(myCompare(string1, string2));
 
