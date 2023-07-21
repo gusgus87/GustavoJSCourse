@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
+  <p id = "demo">demo</p>
+    <script>
+      
+      let cars = ["ford", "audi", "lexus","ferrari", "pinto", "pickup","mustang"]; 
+      console.log(cars);
+      let clength = cars.length; 
+      let text = "<ul>"; 
+
+      //check to see if array has even or odd number of elements by using modulous 2. If the remainder is 1 then the array is odd. 
+      //the middle of the array is the length of the array / 2 -1/2. 
+      //if it is not odd then the middle is the length divided by 2 - 1.
+
+      //find middle of array
+      let middle = 0;
+      if (clength % 2 == 1){
+        middle = clength/2 -1/2;
+      }
+      else{
+        middle = clength/2 - 1;
+      }
+
+      //Start from the middle and write elements from left and right of the middle.  
+
+      let i = middle;
+      while (i >= 0 && i < clength){
+        if (i <= middle){
+          text += "<li>" + cars[i] + "</li>";
+          i--;
+        }
+        if (i == 0){
+          text+= "<li>" + cars[i] + "</li>";
+          i = middle + 1;
+        } 
+        //when to use if / else if / else
+        if (i >= middle){ 
+          text += "<li>" + cars[i] + "</li>";
+          i++;
+        }
+      }
+
+
+      text += "</ul>";
+      document.getElementById("demo").innerHTML = text; //Writes innerhtml to the page.
+    </script>
+  </body>
+</html>
+
+
+
+//homework optimize this with 1 loop <br>
+//homework write while loop 
+

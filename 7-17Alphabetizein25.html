@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let teams = ["Ram", "Raider","Raiders", "Chief", "Chiefs", "Broncos", "Chargers", "49ers", "Seahawks", "Cardinals", "Rams", "Raiders"];
+      let teamsLength = teams.length;
+      let lastTeam = teamsLength-1;
+      let text= "<ul>";
+
+      // loop will alphabetize the array teams.  
+      let tempTeam = 0;
+      let frontTeam = 0;
+      let nextTeam = 0;
+
+      let i = 0;
+      let teamsCheck = 0;
+
+      while ( i<lastTeam && (teamsCheck !== teams)){
+        frontTeam = teams[i];
+        nextTeam = teams[i+1]; 
+        //check if team in front is greater than the next team, should be arranged behind the next team alphabetically. 
+        // I need to know how the compare strings. 
+        if (frontTeam.localeCompare(nextTeam) > 0){
+          teamsCheck = teams;
+          // swap the 2 elements being compared if necessary.  
+          tempTeam = frontTeam;
+          teams[i] = nextTeam;
+          teams[i+1] = tempTeam;
+        }
+        i++;
+        console.log(i);
+        if ( i == lastTeam){
+          if ( teamsCheck !== teams)
+          console.log("hello")
+            i = 0;
+        }
+
+      }
+
+      for(let j=0; j<teamsLength; j++){
+        text+= "<li>" + teams[j] + "</li>";
+      }
+      text+= "</ul>";
+      document.getElementById("demo").innerHTML=text;
+    </script>
+  </body>
+</html>
+
+
+
+
+
+//homework alphabetical in less than 25 lines. alphetical. 
+
+//notes how to compare strings and how to compare characters.
+
+//homework write my own string compare function. 
+//bubble sort 
+// big O notation- a way to describe how long things take in a number of steps. 
+
+// Big O(n)
+// Big O(n^3)
+
+// hw write a string compare function 
+// bubble sort, merge sort, selection sort
+// array.sort lazy 

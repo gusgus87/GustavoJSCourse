@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html>
+    <head></head>
+    <body>
+      <script>
+
+        let string1 = "californias";
+        let string2 = "california";
+
+        // function will compare 2 strings and return -1 when str1 is < str2. 0 when they are the same. 1 when str1>str2.
+        function myCompare(str1,str2){
+          let str1Length = str1.length;
+          let str2Length = str2.length;
+          let length = str1Length;
+
+          // catches matching strings before entering a loop.
+          if (str1 == str2)
+            return 0;
+
+          //checks which string is longer in case of matching previous characters of a string. 
+          if ( str1Length < str2Length)
+            length = str2Length;
+      
+          for( i=0; i < length; i++){
+            if ( str1[i] > str2[i] )
+              return -1;
+            if ( str1[i] < str2[i] )
+              return 1;
+            }
+            // in case 1 word is longer and all previous letters match. Whichever word is longer will be greater, returning 1. 
+            if( length == str1Length )
+                  return -1;
+                else
+                  return 1; 
+        }
+        console.log(myCompare(string1, string2));
+
+        if ( myCompare(string1, string2) == 1 )
+          console.log(string1 +" comes before "+ string2)
+        if ( myCompare(string1, string2) == -1 )
+          console.log(string1 +" comes after "+ string2)
+        if ( myCompare(string1, string2) == 0 )
+        console.log(string1 +" is the same as "+ string2)
+      </script>
+    </body>
+  </html>
+    

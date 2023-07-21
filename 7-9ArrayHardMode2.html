@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p id="demo" style="
+      font-weight:bold;
+      font-size: 32px;
+      "></p>
+
+    <script>
+      let afcTeams = ["Raiders", "Chiefs", "Broncos", "Chargers"];
+      console.log (afcTeams);
+      let nfcTeams=["49ers", "Seahawks", "Cardinals", "Rams"];
+      console.log(nfcTeams);
+      let afcLength = afcTeams.length;
+      console.log(afcLength);
+      let nfcLength = nfcTeams.length;
+      console.log(nfcLength);
+
+      let text= "<ul>";
+        console.log(text);
+
+      for (let i=0; i<afcLength; i++){
+        text+= "<li>" + afcTeams[i] + "</li>";
+        console.log(text);
+      }
+
+      for(let j=0; j<nfcLength; j++){
+        text+= "<li>" + nfcTeams[j] + "</li>";
+      }
+      console.log(text);
+      
+      text+= "</ul>";
+      console.log(text);
+      document.getElementById("demo").innerHTML=text;
+    </script>
+  </body>
+</html>
+
+//merge afc and nfc teams into a single seperate array "teams". in alphabetical order. 
+//we need to move on to constructor functions and prototypes and inheritance. 
+// 

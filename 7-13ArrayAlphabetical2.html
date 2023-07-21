@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p id="demo" style="
+      font-weight:bold;
+      font-size: 32px;
+      "></p>
+
+    <script>
+      let afcTeams = ["Raiders", "Chiefs", "Broncos", "Chargers"];
+      let nfcTeams=["49ers", "Seahawks", "Cardinals", "Rams"];
+      let afcLength = afcTeams.length;
+      let nfcLength = nfcTeams.length;
+      let teams = [];
+      
+      console.log(teams);
+
+      let text= "<ul>";
+        console.log(text);
+
+      for (let i=0; i<afcLength; i++){
+        teams[i] = afcTeams[i];
+        console.log(teams);
+      }
+
+      for(let j=0; j<nfcLength; j++){
+        teams[afcLength + j] = nfcTeams[j];
+        console.log(teams);
+      }
+      let teamsLength = teams.length;
+      console.log(teams[0][0]);
+      console.log(teams[0+1][0]);
+
+      let tempTeam = "noteam";
+      for(let i=0; i<teamsLength-1; i++){
+        if(teams[i][0] > teams[i+1][0]){
+          tempTeam = teams[i];
+          console.log(tempTeam);
+          teams[i] = teams[i+1];
+          teams[i+1] = tempTeam;
+          i=-1;
+        }
+      }
+
+      for(let k=0; k<teamsLength; k++){
+        text+= "<li>" + teams[k] + "</li>";
+        console.log(text);
+      }
+      console.log(text);
+      
+      text+= "</ul>";
+      console.log(text);
+      document.getElementById("demo").innerHTML=text;
+    </script>
+  </body>
+</html>
+
+//homework alphabetical in less than 25 lines. alphetical. 
+
+//notes how to compare strings and how to compare characters.
