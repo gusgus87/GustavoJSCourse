@@ -1,0 +1,17 @@
+This and Callback Functions 
+
+My understanding,
+
+    Callback Functions:
+        These are functions that are more versitile. You can now have a stronger function that can
+        execute similar functions that do completely different things. Also it can be used to 
+        catch bad values before being passed to a callback function. Capable of drastically cleaning up 
+        code if put to use properly. 
+
+    This keyword:
+        Can be tricky. Will go to the nearest object. Binding can be useful to get 'this'
+        where you want it to be. A bit unclear why using this would be so much better than 
+        specifying the object you want. I have a better understanding of this but would like
+        more understanding of why and when to use it. 
+
+
