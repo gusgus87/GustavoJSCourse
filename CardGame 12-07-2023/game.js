@@ -6,7 +6,7 @@ const deck = {
     
     //empty array property that will hold the card objects of the deck
     cards: [],
-    players:[],
+    players: [],
 
     //generates and returns deck of card objects that make up a standard deck using hexadecimal
     createDeck: function(suits,denoms){
