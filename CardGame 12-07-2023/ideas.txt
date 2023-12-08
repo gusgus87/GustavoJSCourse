@@ -16,10 +16,11 @@ The game obj structures the game by using methods such as:
 		compares denom by rank using hexidec num system
 	play
 		takes card from a p1 & p2 to compare and removes card from players' hands
+		returns winner.
 	win
-		return the winner
+		return the winner after all rounds.
 	end
-		idk
+		Ends the game when a player has 0 cards in their hand. 
 	declareWinner
 		display the winner
 
