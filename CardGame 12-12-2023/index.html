@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+	<body>
+		<script src="card.js"></script>
+        <script src="players.js"></script>
+   		<script src="game.js"></script>
+        <div>
+            <div class="forms">
+                <label for= "numberOfPlayers">Enter number of Players</label>
+                <input type="number" id="numberOfPlayers">
+            </div>
+            <div class="forms">
+                <label for= "numberOfCards">Enter number of Cards</label>
+                <input type="number" id="numberOfCards">
+
+            </div>
+        </div>
+        <div class="buttons">  
+            <button id ="newGame" onclick="newGame()">New Game</button>
+            <button id ="Play" onclick="Game.play(deck.players)">Play Cards</button> 
+        </div>
+        <p id="message"></p>
+	</body>
+	</html>

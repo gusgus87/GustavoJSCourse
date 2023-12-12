@@ -1,0 +1,65 @@
+
+button{
+    font-family: "Rubik", sans-sarif;
+    color: white;
+    background-color: darkblue;
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-radius: 12px;
+    transition: box-shadow .4s;
+    transition all 0.4s ease 0s;
+    border: none;
+    margin-left: 32px;
+    margin-right:32px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+label{
+    font-family: "Rubik", sans-sarif;
+    color: darkblue;
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: box-shadow .4s;
+    transition all 0.4s ease 0s;
+}
+input{
+    margin-left: 2px;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 64px;
+
+}
+
+p{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 64px;
+    font-family: "Rubik", sans-sarif;
+    color: darkblue;
+    font-size: 21px;
+
+}
+
+}

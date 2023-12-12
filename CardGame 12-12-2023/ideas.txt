@@ -1,0 +1,32 @@
+Ideas
+
+game.js will include a deck object and a game obj. 
+A deck is a collection 4* sets of 13* card objects. 	
+	Each set is a suit that consists of 13* comparable hexidecimal ranked denominations.
+		Suits will have comparable but unranked values. 
+	The collection will be an array of card objects. 
+	The deck obj will have 2 methods: 
+		Shuffle
+			Randomly mixes collection of cards differently each time
+		Deal
+			Assigns cards to players and removes from dealable cards 
+The game obj structures the game by using methods such as:
+	compare
+		compares suits unranked unless there is a trump card
+		compares denom by rank using hexidec num system
+	play
+		takes card from a p1 & p2 to compare and removes card from players' hands
+	win
+		return the winner
+	end
+		idk
+	declareWinner
+		display the winner
+
+Number system for standard deck
+    0x2-9=2-9, 0xA=10, 0xB=Jack, 0xC=Queen, 0xD=King, 0xE=Ace
+Suits 
+    diamond, heart, spade, club
+
+
+
